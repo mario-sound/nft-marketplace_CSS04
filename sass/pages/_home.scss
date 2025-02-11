@@ -1,0 +1,168 @@
+@use "../abstracts/abstracts" as abs;
+
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.hero {
+  grid-column: 1 / span 1;
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: abs.$second-font;
+    background-image: url("../../img/circle-vector.svg");
+    background-repeat: no-repeat;
+    background-position: 140px 6px;
+    background-size: 265px;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  p {
+    color: abs.$grey;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    span {
+      border-bottom: 3px solid abs.$corp-color;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    a:first-child {
+      color: white;
+      &:hover {
+        color: abs.$corp-color;
+      }
+    }
+    a:nth-of-type(2) {
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+    }
+  }
+}
+
+.featured {
+  grid-column: 1 / span 1;
+  padding-right: 30px;
+
+  &__tittle {
+    font-family: abs.$second-font;
+    margin: 30px 0 20px;
+  }
+
+  &__imgs {
+    display: flex;
+    justify-content: space-between;
+    img {
+      max-width: 100%;
+      width: 48%;
+      padding: 4px;
+      border: 1px solid;
+      border-radius: 3px;
+    }
+  }
+}
+
+.nft {
+  margin-left: 100px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0px 0 30px;
+  &__imgcontainer {
+    img {
+      max-width: 100%;
+      width: 700px;
+    }
+  }
+  &__header {
+    border-bottom: 1px solid black;
+    padding: 20px 0 15px 0;
+  }
+  &__data {
+    margin-top: -50px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    &__header {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  &__owner {
+    display: flex;
+    img {
+      padding-right: 15px;
+    }
+  }
+  &__price {
+    padding-right: 20px;
+  }
+  &__owner-data,
+  &__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    :first-child {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: abs.$grey;
+    }
+    :nth-of-type(2) {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+  &__buttons {
+    padding-bottom: 30px;
+    a {
+      color: white;
+      font-weight: 500;
+      padding: 15px 75px;
+    }
+    a:nth-of-type(2) {
+      color: abs.$corp-color;
+      background-color: white;
+      &:hover {
+        color: abs.$grey;
+      }
+    }
+  }
+  &__metrics {
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 30px 0 10px;
+    gap: 70px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__number {
+    color: abs.$corp-color;
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  &__artzie {
+    position: absolute;
+    top: 350px;
+    right: -280px;
+    font-family: abs.$second-font;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 15rem;
+    transform: rotate(90deg);
+    z-index: -1;
+  }
+}

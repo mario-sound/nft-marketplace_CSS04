@@ -1,0 +1,399 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/");
+  src: url("../../fonts/poppins/Poppins-Italic.eot");
+  src: url("../../fonts/poppins/Poppins-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Italic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Italic.woff") format("woff"), url("../../fonts/poppins/Poppins-Italic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Italic.svg#Poppins-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-ExtraBoldItalic.eot");
+  src: url("../../fonts/poppins/Poppins-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-ExtraBoldItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-ExtraBoldItalic.svg#Poppins-ExtraBoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-Bold.eot");
+  src: url("../../fonts/poppins/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Bold.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Bold.woff") format("woff"), url("../../fonts/poppins/Poppins-Bold.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-Black.eot");
+  src: url("../../fonts/poppins/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Black.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Black.woff") format("woff"), url("../../fonts/poppins/Poppins-Black.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-ExtraLightItalic.eot");
+  src: url("../../fonts/poppins/Poppins-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-ExtraLightItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-ExtraLightItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-ExtraLightItalic.svg#Poppins-ExtraLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-ExtraBold.eot");
+  src: url("../../fonts/poppins/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-ExtraBold.woff2") format("woff2"), url("../../fonts/poppins/Poppins-ExtraBold.woff") format("woff"), url("../../fonts/poppins/Poppins-ExtraBold.ttf") format("truetype"), url("../../fonts/poppins/Poppins-ExtraBold.svg#Poppins-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-BlackItalic.eot");
+  src: url("../../fonts/poppins/Poppins-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-BlackItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-BlackItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-BlackItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-BlackItalic.svg#Poppins-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-BoldItalic.eot");
+  src: url("../../fonts/poppins/Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-BoldItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-BoldItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-BoldItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-BoldItalic.svg#Poppins-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-ExtraLight.eot");
+  src: url("../../fonts/poppins/Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-ExtraLight.woff2") format("woff2"), url("../../fonts/poppins/Poppins-ExtraLight.woff") format("woff"), url("../../fonts/poppins/Poppins-ExtraLight.ttf") format("truetype"), url("../../fonts/poppins/Poppins-ExtraLight.svg#Poppins-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-ThinItalic.eot");
+  src: url("../../fonts/poppins/Poppins-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-ThinItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-ThinItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-ThinItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-ThinItalic.svg#Poppins-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-Regular.eot");
+  src: url("../../fonts/poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Regular.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Regular.woff") format("woff"), url("../../fonts/poppins/Poppins-Regular.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-MediumItalic.eot");
+  src: url("../../fonts/poppins/Poppins-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-MediumItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-MediumItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-MediumItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-MediumItalic.svg#Poppins-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-Medium.eot");
+  src: url("../../fonts/poppins/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Medium.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Medium.woff") format("woff"), url("../../fonts/poppins/Poppins-Medium.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-Thin.eot");
+  src: url("../../fonts/poppins/Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Thin.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Thin.woff") format("woff"), url("../../fonts/poppins/Poppins-Thin.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Thin.svg#Poppins-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-LightItalic.eot");
+  src: url("../../fonts/poppins/Poppins-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-LightItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-LightItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-LightItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-LightItalic.svg#Poppins-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-SemiBold.eot");
+  src: url("../../fonts/poppins/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-SemiBold.woff2") format("woff2"), url("../../fonts/poppins/Poppins-SemiBold.woff") format("woff"), url("../../fonts/poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-SemiBoldItalic.eot");
+  src: url("../../fonts/poppins/Poppins-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../../fonts/poppins/Poppins-SemiBoldItalic.woff") format("woff"), url("../../fonts/poppins/Poppins-SemiBoldItalic.ttf") format("truetype"), url("../../fonts/poppins/Poppins-SemiBoldItalic.svg#Poppins-SemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/poppins/Poppins-Light.eot");
+  src: url("../../fonts/poppins/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/poppins/Poppins-Light.woff2") format("woff2"), url("../../fonts/poppins/Poppins-Light.woff") format("woff"), url("../../fonts/poppins/Poppins-Light.ttf") format("truetype"), url("../../fonts/poppins/Poppins-Light.svg#Poppins-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.btn {
+  background-color: #fa504d;
+  padding: 8px 80px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-color: white;
+}
+
+header {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+header div.menu,
+header aside.sign {
+  display: flex;
+  align-items: center;
+}
+header div.menu nav ul,
+header aside.sign nav ul {
+  display: flex;
+}
+header div.menu {
+  width: 60%;
+  justify-content: space-between;
+}
+header div.menu nav ul {
+  gap: 50px;
+}
+header aside.sign {
+  justify-content: flex-end;
+}
+header aside.sign nav ul {
+  gap: 27px;
+}
+header aside.sign nav ul li a {
+  font-weight: 300;
+  color: white;
+}
+header aside.sign nav ul li a:hover {
+  color: #fa504d;
+}
+header aside.sign nav ul li .btn {
+  padding: 8px 30px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.hero {
+  grid-column: 1/span 1;
+}
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  font-family: "Belgrano", serif;
+  background-image: url("../../img/circle-vector.svg");
+  background-repeat: no-repeat;
+  background-position: 140px 6px;
+  background-size: 265px;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.hero p {
+  color: #8e8e8e;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.hero p span {
+  border-bottom: 3px solid #fa504d;
+}
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero__buttons a:first-child {
+  color: white;
+}
+.hero__buttons a:first-child:hover {
+  color: #fa504d;
+}
+.hero__buttons a:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.featured {
+  grid-column: 1/span 1;
+  padding-right: 30px;
+}
+.featured__tittle {
+  font-family: "Belgrano", serif;
+  margin: 30px 0 20px;
+}
+.featured__imgs {
+  display: flex;
+  justify-content: space-between;
+}
+.featured__imgs img {
+  max-width: 100%;
+  width: 48%;
+  padding: 4px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.nft {
+  margin-left: 100px;
+  grid-column: 2/span 1;
+  grid-row: 1/span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0px 0 30px;
+}
+.nft__imgcontainer img {
+  max-width: 100%;
+  width: 700px;
+}
+.nft__header {
+  border-bottom: 1px solid black;
+  padding: 20px 0 15px 0;
+}
+.nft__data {
+  margin-top: -50px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+.nft__data__header {
+  display: flex;
+  align-items: baseline;
+}
+.nft__owner {
+  display: flex;
+}
+.nft__owner img {
+  padding-right: 15px;
+}
+.nft__price {
+  padding-right: 20px;
+}
+.nft__owner-data, .nft__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nft__owner-data :first-child, .nft__price :first-child {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #8e8e8e;
+}
+.nft__owner-data :nth-of-type(2), .nft__price :nth-of-type(2) {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.nft__buttons {
+  padding-bottom: 30px;
+}
+.nft__buttons a {
+  color: white;
+  font-weight: 500;
+  padding: 15px 75px;
+}
+.nft__buttons a:nth-of-type(2) {
+  color: #fa504d;
+  background-color: white;
+}
+.nft__buttons a:nth-of-type(2):hover {
+  color: #8e8e8e;
+}
+.nft__metrics {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 30px 0 10px;
+  gap: 70px;
+}
+.nft__metrics div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nft__number {
+  color: #fa504d;
+  padding: 0px 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nft__artzie {
+  position: absolute;
+  top: 350px;
+  right: -280px;
+  font-family: "Belgrano", serif;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 15rem;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Poppins";
+}
+body::before {
+  content: "";
+  background-color: #2e2f38;
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+body h1 {
+  font-family: "Belgrano", serif;
+}
+body a {
+  color: #2e2f38;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+body a:hover {
+  color: #fa504d;
+}
+body ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

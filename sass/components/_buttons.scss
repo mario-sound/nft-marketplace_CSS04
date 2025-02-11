@@ -1,0 +1,10 @@
+@use "../abstracts/abstracts" as abs;
+
+.btn {
+  background-color: abs.$corp-color;
+  padding: 8px 80px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: white;
+  }
+}

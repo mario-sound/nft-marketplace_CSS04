@@ -1,0 +1,47 @@
+@use "../abstracts/abstracts" as abs;
+
+header {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  div.menu,
+  aside.sign {
+    display: flex;
+    align-items: center;
+    nav {
+      ul {
+        display: flex;
+      }
+    }
+  }
+  div.menu {
+    width: 60%;
+    justify-content: space-between;
+    nav {
+      ul {
+        gap: 50px;
+      }
+    }
+  }
+  aside.sign {
+    justify-content: flex-end;
+    nav {
+      ul {
+        gap: 27px;
+        li {
+          a {
+            font-weight: 300;
+            color: white;
+            &:hover {
+              color: abs.$corp-color;
+            }
+          }
+          .btn {
+            padding: 8px 30px;
+          }
+        }
+      }
+    }
+  }
+}

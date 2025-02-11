@@ -1,0 +1,46 @@
+@use "./abstracts/abstracts" as abs;
+@use "./vendors/vendors";
+@use "./base/base";
+@use "./components/components";
+@use "./layout/layout";
+@use "./pages/pages";
+@use "./themes/themes";
+@use "settings";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 1rem;
+  &::before {
+    content: "";
+    background-color: abs.$black;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+  }
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: abs.$lead-font;
+  h1 {
+    font-family: abs.$second-font;
+  }
+  a {
+    color: abs.$black;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover {
+      color: abs.$corp-color;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+}
